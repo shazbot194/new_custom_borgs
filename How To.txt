@@ -1,0 +1,26 @@
+This is a how to file, it will tell you where to install these files 
+to test it on your own private server.
+
+The custom_sprites.txt and custom_sprites_open.txt go into the config folder
+The robot.dm goes in /code/modules/mob/living/silicon/robot and replace the file robot.dm
+
+Any custom icons have to go in icons/mob/custom_synthetic.dmi
+
+The format for custom_sprite.txt is key:job:icon_name.
+The key is your login name
+The job is what job you have, the current list is;
+Standard, Service, Miner, Medical, Security, Engineering, Janitor, Combat, 
+Peacekeeper, Hunter, Commando, Combat, Syndicate, and Syndicate Medical
+The icon_name is what the icon is named.
+
+If the icon you made has a custom open state, you need to use the custom_sprites_open.txt
+the setup is icon_name:type_name
+The icon_name is the same from custom_sprites.txt and the type_name is the first part
+of the name of the open icons, the open with a cell is called <name>-openpanel +c
+This way multiple diffrent icons can use the custom open sprites.
+
+To use ingame, any normal borg will get the option to use any defined custom icon when
+selecting icons, and can go back and forth between custom and default icons.
+
+To use ingame as a special spawned borg, ie syndicate or deathsquad, select 
+"Special Cyborg Icon pick" and pick as you normaly would
